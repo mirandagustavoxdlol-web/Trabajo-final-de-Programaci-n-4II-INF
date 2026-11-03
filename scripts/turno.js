@@ -1,4 +1,3 @@
-tipo y fecha y codigo y paciente
 class turno {
     constructor (tipo, fecha, codigo, paciente){
         this.tipo=tipo;
