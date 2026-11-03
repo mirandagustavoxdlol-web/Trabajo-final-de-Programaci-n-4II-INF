@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de turnos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="logo">
+            <h1>Hospital de Quilmes</h1>
+            <p>Solicitud de atención médica</p>
+        </div>
+
+        <nav class="botones-derecha">
+            <a href="index.html" class="boton">Volver</a>
+        </nav>
+    </header>
+
+    <main class="contenedor formulario-contenedor">
+        <h2>Formulario de turnos</h2>
+
+        <p>Complete los datos del paciente para solicitar un turno.</p>
+
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos del paciente</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingrese su nombre"
+                    required>
+
+                <label for="apellido">Apellido:</label>
+                <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    placeholder="Ingrese su apellido"
+                    required>
+
+                <label for="dni">DNI:</label>
+                <input
+                    type="text"
+                    id="dni"
+                    name="dni"
+                    placeholder="Ingrese su DNI"
+                    required>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+             
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+     
+
+                </select>
+
+                <label for="fecha">Fecha del turno:</label>
+                <input
+                    type="date"
+                    id="fecha"
+                    name="fecha"
+                    required>
+
+                <label for="tipo">Tipo de turno:</label>
+                <select id="tipo" name="tipo" required>
+                
+                    <option value="clinica">Clínica médica</option>
+                    <option value="pediatria">Pediatría</option>
+                    <option value="odontologia">Odontología</option>
+                    <option value="cardiologia">Cardiología</option>
+                    <option value="traumatologia">Traumatología</option>
+                </select>
+
+                <button type="submit" onblur="" class="boton-confirmar">
+                    Confirmar
+                </button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Hospital de Quilmes | Sitio web educativo</p>
+    </footer>
+
+</body>
+</html>

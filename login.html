@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hospital de Quilmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="logo">
+            <h1>Hospital de Quilmes</h1>
+            <p>Sistema de gestión</p>
+        </div>
+
+        <nav class="botones-derecha">
+            <a href="index.html" class="boton">Volver al inicio</a>
+        </nav>
+    </header>
+
+    <main class="login-contenedor">
+        <form class="login-formulario" action="gestion.html" method="get">
+            <h2>Iniciar sesión</h2>
+            <p>Ingresá tus datos para acceder al sistema.</p>
+
+            <label for="usuario">Usuario:</label>
+            <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                placeholder="Ingresá tu usuario"
+                required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input
+                type="password"
+                id="contrasena"
+                name="contrasena"
+                placeholder="Ingresá tu contraseña"
+                required>
+
+            <button type="submit" class="boton-login">Ingresar</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Hospital de Quilmes | Sitio web educativo</p>
+    </footer>
+
+</body>
+</html>
