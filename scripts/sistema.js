@@ -87,3 +87,28 @@ class turno {
             return "tipo: " + this.tipo + ", fecha: " + this.fecha + ", codigo: " + this.codigo + ", paciente: " + this.paciente
         }
 }
+
+class SistemaTurno() {
+    constructor(){
+        this.paciente=[];
+        this.turno=[];
+        this.cargardatos();
+    }
+}
+
+cargardatos(){
+    let paciente=localstorage.getItem("pacientes");
+    let turno=localstorage.getItem("turnos");
+
+    if (paciente!=null){
+        this.pacientes=JSON.parse()
+    }
+    if (turno!=null){
+        this.turnos=JSON.parse
+    }
+}
+
+guardardatos(){
+    localstorage.setItem("pacientes", JSON.stringify(this.pacientes));
+    localstorage.setItem("turnos", JSON.stringify(this.turno));
+}
