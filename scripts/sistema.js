@@ -112,6 +112,19 @@ buscarturno(id){
     return null
 }
 
+listaturnos(){
+    return this.turnos;
+}
+
+listaturnosporDNI(dni){
+    let resultado = []
+    for (let i=0; i<turno.length; i++){
+        if (turno[i].getturno()==turno){
+            resultado.push(turno[i])
+        }
+    }
+}
+
 cargardatos(){
     let paciente=localstorage.getItem("pacientes");
     let turno=localstorage.getItem("turnos");
