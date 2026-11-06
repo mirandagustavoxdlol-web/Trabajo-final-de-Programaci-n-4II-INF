@@ -94,6 +94,14 @@ class SistemaTurno() {
         this.turno=[];
         this.cargardatos();
     }
+
+buscarPaciente(dni){
+    for (let i=0; i<paciente.length; i++){
+        if (paciente[i].getDni()==dni){
+            return(paciente[i])
+        }
+    }
+    return null
 }
 
 cargardatos(){
@@ -112,3 +120,6 @@ guardardatos(){
     localstorage.setItem("pacientes", JSON.stringify(this.pacientes));
     localstorage.setItem("turnos", JSON.stringify(this.turno));
 }
+
+}
+
