@@ -104,6 +104,14 @@ buscarPaciente(dni){
     return null
 }
 
+buscarturno(id){
+    for (let i=0; i<turno.length; i++){
+        if (turno[i].getTurno()==turno){
+        }
+    }
+    return null
+}
+
 cargardatos(){
     let paciente=localstorage.getItem("pacientes");
     let turno=localstorage.getItem("turnos");
